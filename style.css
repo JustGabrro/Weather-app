@@ -183,3 +183,85 @@ body::before {
     width: fit-content;
 }
 /* end SECTION: MESSAGE */
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .main-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .weather-info, .section-message {
+        gap: 15px;
+    }
+
+    .city-input {
+        padding: 10px;
+    }
+
+    .weather-summary-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .weather-summary-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .forecast-items-container {
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .forecast-items-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .forecast-item {
+        min-width: 60px;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-container {
+        width: 85%;
+        height: auto;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .weather-summary-container {
+        gap: 20px;
+    }
+
+    .weather-summary-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .forecast-item {
+        min-width: 65px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .main-container {
+        width: 70%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .forecast-item {
+        min-width: 70px;
+    }
+}
+
